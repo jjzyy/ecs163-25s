@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pokemon Dashboard (HW3)</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .chart {
+      margin: 20px;
+    }
+    svg {
+      background: #f9f9f9;
+      border: 1px solid #ccc;
+    }
+    h2 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="chart" id="barChart">
+    <h2>Overview: Pokemon by Type 1</h2>
+    <svg width="400" height="300"></svg>
+  </div>
+
+  <div class="chart" id="scatterPlot">
+    <h2>Scatter Plot: Attack vs. Defense</h2>
+    <svg width="400" height="300"></svg>
+  </div>
+
+  <div class="chart" id="parallelCoords">
+    <h2>Parallel Coordinates: Stats Overview</h2>
+    <svg width="800" height="300"></svg>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
